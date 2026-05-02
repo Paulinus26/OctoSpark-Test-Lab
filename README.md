@@ -39,6 +39,7 @@ OctoSpark is built as a real-time pipeline with four layers:
 - **Feedback** – Logs activity and supports continuous improvement  
 
 ![Architecture Overview](https://raw.githubusercontent.com/Paulinus26/OctoSpark-Test-Lab/9a22068d17248303f5a182594e6aee28db989d13/arch-orchestration.png.png)
+
 **Figure 1: Event-Driven Triage Architecture**
 
 
@@ -81,7 +82,6 @@ To resolve this:
 This ensures secure and reliable event processing.
 
 
-
 ### 4. Signal Detection and Triage Logic
 
 Initial testing showed that keyword matching alone was not reliable.
@@ -94,7 +94,7 @@ To reduce false positives, the system requires supporting signals before escalat
 - Reproducible steps  
 - Impact indicators  
 
-![Triage Logic](./assets/triage-logic.png)
+![Triage Logic](https://github.com/Paulinus26/OctoSpark-Test-Lab/blob/main/triage-logic.png?raw=true)
 
 **Figure 2: Triage Decision Logic (Signal Detection and Priority Assignment)**
 
