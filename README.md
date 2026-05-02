@@ -10,16 +10,15 @@ At its core, this project answers a practical question:
 
 > How do you reduce time-to-resolution when most incoming issues are poorly structured or ambiguous?
 
----
----
 
-## 📘 Case Study
+## 📘 Case Study (Full Build & Debugging Process)
 
-For a detailed breakdown of the design decisions, implementation steps, and debugging process, see the full case study:
+This README summarizes the system design and behavior.
 
-👉 [OctoSpark Case Study (Notion)](https://your-notion-link)
+For a step-by-step breakdown—including debugging decisions, architecture evolution, and real test cases:
 
----
+👉 [View Full Case Study on Notion](https://your-notion-link)
+
 
 ## Problem Context
 
@@ -29,7 +28,6 @@ A production-breaking `500` error can look no different from a feature request a
 
 OctoSpark treats every issue as a live event that needs immediate analysis, not passive review.
 
----
 
 ## System Architecture
 
@@ -42,7 +40,6 @@ OctoSpark is built as a real-time pipeline with four layers:
 
 ![Architecture Overview](./assets/architecture.png)
 
----
 
 ## Implementation
 
@@ -54,7 +51,6 @@ A PostgreSQL schema acts as the system’s memory, allowing it to track patterns
 
 This avoids relying on short-lived logs and makes the system easier to evolve.
 
----
 
 ### 2. Triage Engine (Edge Functions)
 
@@ -69,7 +65,6 @@ Each incoming issue is processed as an event:
 
 This setup handles bursts of activity without requiring a persistent server.
 
----
 
 ### 3. Security and Integration
 
@@ -84,7 +79,7 @@ To resolve this:
 
 This ensures secure and reliable event processing.
 
----
+
 
 ### 4. Signal Detection and Triage Logic
 
@@ -98,7 +93,7 @@ To reduce false positives, the system requires supporting signals before escalat
 - Reproducible steps  
 - Impact indicators  
 
----
+
 
 ### 5. Automated Response and Routing
 
@@ -109,7 +104,6 @@ When a high-priority issue is detected, the system takes immediate action:
 - Request debugging details  
 - Route issue to appropriate owner  
 
----
 
 ## Example: Automated Triage in Action
 
