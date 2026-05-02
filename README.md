@@ -38,7 +38,7 @@ OctoSpark is built as a real-time pipeline with four layers:
 - **Action** – Applies labels, posts responses, and routes issues  
 - **Feedback** – Logs activity and supports continuous improvement  
 
-![Architecture Overview](./assets/architecture.png)
+![Architecture Overview](https://raw.githubusercontent.com/Paulinus26/OctoSpark-Test-Lab/9a22068d17248303f5a182594e6aee28db989d13/arch-orchestration.png.png)
 **Figure 1: Event-Driven Triage Architecture**
 
 
