@@ -39,6 +39,7 @@ OctoSpark is built as a real-time pipeline with four layers:
 - **Feedback** – Logs activity and supports continuous improvement  
 
 ![Architecture Overview](./assets/architecture.png)
+**Figure 1: Event-Driven Triage Architecture**
 
 
 ## Implementation
@@ -93,7 +94,9 @@ To reduce false positives, the system requires supporting signals before escalat
 - Reproducible steps  
 - Impact indicators  
 
+![Triage Logic](./assets/triage-logic.png)
 
+**Figure 2: Triage Decision Logic (Signal Detection and Priority Assignment)**
 
 ### 5. Automated Response and Routing
 
@@ -107,6 +110,10 @@ When a high-priority issue is detected, the system takes immediate action:
 
 ## Example: Automated Triage in Action
 
+![Automated Triage Example](./assets/automated-triage-example.png)
+
+**Figure 3: Automated Triage and Response in GitHub Issues**
+
 ### Incoming Issue
 
 > Checkout API returns 500 error during payment processing.
@@ -118,3 +125,41 @@ When a high-priority issue is detected, the system takes immediate action:
 - **Action:** Label applied + response posted  
 
 ### Automated Response
+Thanks for reporting this. A 500 error usually indicates a server-side issue.
+
+To help narrow this down quickly, could you confirm:
+
+The API endpoint being called
+Whether this started after a recent deployment
+If the issue persists across multiple sessions
+
+Since this is affecting checkout, I’ve flagged it as high priority for investigation.
+
+
+
+## Result: Faster Escalation
+
+The system reduces manual triage by:
+
+- Identifying high-impact issues early  
+- Standardizing issue handling  
+- Ensuring critical problems are visible immediately  
+
+
+## Limitations
+
+- Rule-based signal detection may misclassify edge cases  
+- Duplicate issues with different wording are not yet grouped  
+- Priority does not account for historical frequency or broader system impact  
+
+These are areas for future improvement.
+
+
+## Conclusion
+
+OctoSpark focuses on reducing the time between issue creation and meaningful action.
+
+By automating classification, prioritization, and initial response, it allows engineers to focus on resolving issues rather than sorting them.
+
+This project reflects a practical approach to support engineering:
+build systems that reduce noise, handle ambiguity, and improve response efficiency.
