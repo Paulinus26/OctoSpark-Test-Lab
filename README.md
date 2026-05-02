@@ -11,6 +11,15 @@ At its core, this project answers a practical question:
 > How do you reduce time-to-resolution when most incoming issues are poorly structured or ambiguous?
 
 ---
+---
+
+## 📘 Case Study
+
+For a detailed breakdown of the design decisions, implementation steps, and debugging process, see the full case study:
+
+👉 [OctoSpark Case Study (Notion)](https://your-notion-link)
+
+---
 
 ## Problem Context
 
