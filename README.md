@@ -17,7 +17,7 @@ This README summarizes the system design and behavior.
 
 For a step-by-step breakdown—including debugging decisions, architecture evolution, and real test cases:
 
-👉 [View Full Case Study on Notion](https://your-notion-link)
+👉 [View Full Case Study on Notion](https://www.notion.so/OctoSpark-Real-Time-GitHub-Issue-Triage-System-3497d8de7dd4804e88c6f42ad8e54c41?source=copy_link))
 
 
 ## Problem Context
@@ -110,7 +110,7 @@ When a high-priority issue is detected, the system takes immediate action:
 
 ## Example: Automated Triage in Action
 
-![Automated Triage Example](./assets/automated-triage-example.png)
+![Automated Triage Example](https://github.com/Paulinus26/OctoSpark-Test-Lab/blob/main/automated-triage-example.png?raw=true)
 
 **Figure 3: Automated Triage and Response in GitHub Issues**
 
@@ -134,7 +134,6 @@ Whether this started after a recent deployment
 If the issue persists across multiple sessions
 
 Since this is affecting checkout, I’ve flagged it as high priority for investigation.
-
 
 
 ## Result: Faster Escalation
