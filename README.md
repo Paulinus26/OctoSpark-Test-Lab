@@ -2,7 +2,7 @@
 
 ## Overview
 
-In high-volume developer environments, not every issue deserves the same level of urgency—but they often arrive looking the same.
+In high-volume developer environments, not every issue deserves the same level of urgency, but they often arrive looking the same.
 
 OctoSpark is an automated first-response layer that sits between GitHub Issues and the engineering team. It classifies, prioritizes, and routes incoming issues in real time, so critical failures don’t get buried under routine questions or incomplete reports.
 
@@ -15,7 +15,7 @@ At its core, this project answers a practical question:
 
 This README summarizes the system design and behavior.
 
-For a step-by-step breakdown—including debugging decisions, architecture evolution, and real test cases:
+For a step-by-step breakdown, including debugging decisions, architecture evolution, and real test cases:
 
 👉 [View Full Case Study on Notion](https://www.notion.so/OctoSpark-Real-Time-GitHub-Issue-Triage-System-3497d8de7dd4804e88c6f42ad8e54c41?source=copy_link))
 
